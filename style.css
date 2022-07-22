@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+
+body{
+  background-color: #EEEEEE;
+
+}
+
+.container{
+  max-width: 550px;
+  width: 90%;
+  margin: auto;
+}
+
+nav{
+  background-color: #222831;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+h1{
+  color: white;
+  font-size: 50px;
+}
+
+section{
+  margin-block: 3rem;
+}
+
+section .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input{
+  width: 100%;
+  padding-block: 1rem;
+  padding-inline: .6rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  border: none;
+}
+
+input:focus{
+  border: #FF2E63 1px solid;
+}
+
+input::placeholder{
+  text-align: center;
+}
+
+button{
+  width: 80%;
+  background-color: #00ADB5;
+  border: none;
+  border-radius: 10px;
+  padding-block: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #EEEEEE;
+  font-size: 1.2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+button::before{
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-radius: 100px;
+  background-color: #FF2E63;
+  top: var(--yPos);
+  left: var(--xPos);
+  transform: translate(-50%, -50%);
+  transition: width .5s , height .5s;
+}
+
+
+button:hover::before{
+  width: 900px;
+  height: 500px;
+}
+
+button span{
+  position: relative;
+  z-index: 2;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 4rem;
+}
+
+ul{
+  background-color: #FF2E63;
+  padding: 1.3rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background-color: #222831;
+  color: #EEEEEE;
+  padding: .9rem;
+  border-radius: 10px;
+  width: 100%;
+}
+
+h2{
+  letter-spacing: 1.2px;
+  font-size: 20px;
+}
+
+i{
+  cursor: pointer;
+}
+
+canvas {
+  display: block;
+}
+
